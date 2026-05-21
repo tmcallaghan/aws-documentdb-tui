@@ -37,7 +37,8 @@ docdb-tui --profile my-aws-profile --region us-east-1
     {
       "Effect": "Allow",
       "Action": [
-        "rds:DescribeDBClusters"
+        "rds:DescribeDBClusters",
+        "rds:DescribeDBInstances"
       ],
       "Resource": "*"
     },
