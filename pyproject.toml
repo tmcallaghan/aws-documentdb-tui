@@ -1,0 +1,23 @@
+[project]
+name = "aws-documentdb-tui"
+version = "0.1.0"
+description = "Terminal User Interface for Amazon DocumentDB"
+requires-python = ">=3.9"
+license = "Apache-2.0"
+dependencies = [
+    "boto3",
+    "textual>=0.70.0",
+]
+
+[project.scripts]
+docdb-tui = "src.main:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

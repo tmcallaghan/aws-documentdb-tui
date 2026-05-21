@@ -1,0 +1,2 @@
+boto3
+textual>=0.70.0
